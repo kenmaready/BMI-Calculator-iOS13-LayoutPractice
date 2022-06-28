@@ -10,11 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var heightSlider: UISlider!
+    @IBOutlet weak var weightSlider: UISlider!
+    @IBOutlet weak var heightDisplay: UILabel!
+    @IBOutlet weak var weightDisplay: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func heightSliderChanged(_ sender: UISlider) {
+        let feet = Int(sender.value / 12)
+        let inches = Int(sender.value.truncatingRemainder(dividingBy: 12))
+        heightDisplay.text = "\(feet) ft \(inches) in"
+    }
+    
+    @IBAction func weightSliderChanged(_ sender: UISlider) {
+        weightDisplay.text = "\(String(format: "%.2f", sender.value))lb"
+    }
 }
 
