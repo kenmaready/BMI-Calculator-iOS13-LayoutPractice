@@ -210,6 +210,7 @@
                     <connections>
                         <outlet property="BMIDisplay" destination="hWo-gc-8p7" id="6XO-MM-xQJ"/>
                         <outlet property="adviceLabel" destination="wL7-Mk-scd" id="xs2-54-KAn"/>
+                        <outlet property="backgroundView" destination="OwB-Gr-By2" id="j9r-dZ-url"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELc-Va-I6V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
